@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/png" href="./img/chef-hat-1588125_1280.png">
+</head>
+
+<body onload="render()">
+
+    <header class="header">
+        <div class="header-section-left">
+            <img class="logo" src="./img/chef-hat-1588125_1280.png" alt="Logo">
+            <h1> Bestell App </h1>
+        </div>
+        <div class="header-section-right">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+    </header>
+
+    <div class="content-wrapper">
+        <div class="left-container">
+            <img class="restaurant-img" src="./img/pizza.jpg" alt="PIZZA">
+            <div class="restaurant-logo-section">
+                <img class="logo-restaurant" src="./img/logo-restaurant.png" alt="Logo">
+                <h2>Pizzeria Roma </h2>
+                <div class="reviews-section"> <img class="star-icon" src="./img/icons-1293736_1280.png" alt="Bewertungen">
+                    <span> <b> 5 </b>(1525+)</span>
+                </div>
+                <span class="span-style"> <a href="#pizza-section">Pizza</a> </span>
+                <span class="span-style"> <a href="#salate-section">Salate</a> </span>
+                <span class="span-style"> <a href="#pasta-section">Pasta</a> </span>
+
+            </div>
+
+            <div>
+                <hr style="border-color: rgb(201, 193, 193, 0.1) ;">
+            </div>
+            <div class="restaurant-wrapper">
+                <div id="menu">
+                    <div id="pizza-section">
+                        <h2>Pizza</h2>
+                        <div id="pizzaDishes"></div>
+                    </div>
+                    <div id="salate-section">
+                        <h2>Salate</h2>
+                        <div id="salateDishes"></div>
+                    </div>
+                    <div id="pasta-section">
+                        <h2>Pasta</h2>
+                        <div id="pastaDishes"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="basket-wrapper">
+            <div class="basket" id="myShoppingCart">
+                <h2>Warenkorb</h2>
+                <img class="shopping-cart-img" src="./img/shopping-cart-close-round-1132-svgrepo-com.svg"
+                    alt="Warenkorb">
+                <span> Dein Warenkorb ist leer</span>
+            </div>
+            <div class="total-price-section">
+                <p onclick="sendOrder()" id="total-price"> </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <a href="datenschutz.html">
+            <p class="footer-style">Datenschutz</p>
+        </a>
+        <a href="impressum.html">
+            <p class="footer-style">Impressum</p>
+        </a>
+    </footer>
+
+</body>
+
+</html>

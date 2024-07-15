@@ -1,0 +1,256 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px silver;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 100px;
+    background-color: orange;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+.hamburger-line {
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    margin-top: 4px;
+}
+
+.header-section-left {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.header-section-right {
+    padding-right: 30px;
+}
+
+.restaurant-img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+.left-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-cart-img {
+    height: 30px;
+    width: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.basket-wrapper {
+    width: 30%;
+    flex-grow: 1;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px silver;
+}
+
+.basket {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo-restaurant {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.dish-img {
+    height: 200px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.menu-section {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+p {
+    padding-left: 10px;
+}
+
+.price-style {
+    font-size: 20px;
+}
+
+.plus-img {
+    height: 15px;
+    padding-right: 20px;
+}
+
+.restaurant-wrapper {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.star-icon {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 10px;
+    padding-right: 8px;
+}
+
+.reviews-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.restaurant-logo-section {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.span-style {
+
+    font-weight: bold;
+    padding-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(98, 96, 96);
+
+}
+
+.add-button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-style {
+    font-size: 24px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description-style {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 18px;
+}
+
+.footer-section {
+    background-color: lightgray;
+    height: 100px;
+}
+
+.footer-style {
+    font-weight: bold;
+    padding-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.basket {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.menu-section:hover {
+    background-color: orange;
+}
+
+.total-price-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 50%;
+}
+
+#total-price {
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+@media (max-width: 735px) {
+
+    .left-container {
+        width: 100%;
+    }
+
+    .span-style {
+        padding-right: 10px;
+        font-size: 16px;
+    }
+
+
+    .restaurant-logo-section {
+        margin-left: 10px;
+    }
+
+    .restaurant-wrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .basket-wrapper {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(249, 248, 246);
+        color: black;
+        text-align: center;
+        padding: 15px;
+        cursor: pointer;
+        height: 200px;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .span-style {
+        padding-right: 10px;
+        font-size: 16px;
+    }
+}
